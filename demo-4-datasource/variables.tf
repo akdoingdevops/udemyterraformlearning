@@ -10,14 +10,14 @@ variable "AWS_REGION" {
   default = "ap-south-1"
 }
 
-variable "AMIS" {
-  type = map(string)
-  default = {
-    ap-south-1 = "ami-0af25d0df86db00c1"
-    us-west-2  = "ami-06b94666"
-    eu-west-1  = "ami-844e0bf7"
-  }
-}
+// variable "AMIS" {
+//   type = map(string)
+//   default = {
+//     ap-south-1 = "ami-0af25d0df86db00c1"
+//     us-west-2  = "ami-06b94666"
+//     eu-west-1  = "ami-844e0bf7"
+//   }
+// }
 
 variable "PATH_TO_PRIVATE_KEY" {
   default = "mykey"
@@ -29,6 +29,10 @@ variable "PATH_TO_PUBLIC_KEY" {
 
 variable "INSTANCE_USERNAME" {
   default = "ec2-user"
+}
+
+variable "instance_type" {
+  default = "t2.micro"
 }
 
 variable "bucketname" {
@@ -56,4 +60,8 @@ variable "acl" {
   type        = string
   description = " Defaults to private "
   default     = "private"
+}
+
+variable "image_name" {
+  type = string
 }
