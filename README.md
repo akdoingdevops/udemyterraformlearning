@@ -33,6 +33,7 @@ demo-18 | Interpolations, VPC module
 demo-18b | Project structure, best practices
 packer-demo | Build AMIs with Packer
 jenkins-packer-demo | Demo with jenkins and Packer
+
 docker-demo-1 | Using ECR - The EC2 Container Registry
 docker-demo-2 | Using ECS - The EC2 Container Service
 docker-demo-3 | Using ECR/ECS with Jenkins in a complete workflow
